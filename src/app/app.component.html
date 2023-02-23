@@ -1,11 +1,3 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
   :host {
@@ -33,9 +25,6 @@
     margin: 0;
   }
 
-  .spacer {
-    flex: 1;
-  }
 
   .toolbar {
     position: fixed;
@@ -52,10 +41,6 @@
   }
 
   .toolbar-div{
-    /*padding-top: 25px;*/
-    /*padding-left: 170px;*/
-    /*padding-right: 170px;*/
-    /*padding-bottom: 25px;*/
     padding: 35px 170px 25px 170px;
     display: flex;
     align-items: center;
@@ -195,74 +180,13 @@
     margin: 0 16px;
   }
 
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
-
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
-    opacity: 0.8;
-  }
-
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  svg.material-icons {
-    height: 24px;
-    width: auto;
-  }
-
-  svg.material-icons:not(:last-child) {
-    margin-right: 8px;
-  }
 
   .card svg.material-icons path {
     fill: #888;
   }
 
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
-  }
-
-  .card {
-    all: unset;
-    border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: #fafafa;
-    height: 40px;
-    width: 200px;
-    margin: 0 8px 16px;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    line-height: 24px;
-  }
-
   .card-container .card:not(:last-child) {
     margin-right: 0;
-  }
-
-  .card.card-small {
-    height: 16px;
-    width: 168px;
   }
 
   .card-container .card:not(.highlight-card) {
@@ -276,16 +200,6 @@
 
   .card-container .card:not(.highlight-card):hover .material-icons path {
     fill: rgb(105, 103, 103);
-  }
-
-  .card.highlight-card {
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    border: none;
-    width: auto;
-    min-width: 30%;
-    position: relative;
   }
 
   .card.card.highlight-card span {
@@ -318,57 +232,12 @@
     color: #125699;
   }
 
-  .terminal {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 6px;
-    padding-top: 45px;
-    margin-top: 8px;
-    overflow: hidden;
-    background-color: rgb(15, 15, 16);
-  }
-
-  .terminal::before {
-    content: "\2022 \2022 \2022";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4px;
-    background: rgb(58, 58, 58);
-    color: #c2c3c4;
-    width: 100%;
-    font-size: 2rem;
-    line-height: 0;
-    padding: 14px 0;
-    text-indent: 4px;
-  }
 
   .terminal pre {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
     color: white;
     padding: 0 1rem 1rem;
     margin: 0;
-  }
-
-  .circle-link {
-    height: 40px;
-    width: 40px;
-    border-radius: 40px;
-    margin: 8px;
-    background-color: white;
-    border: 1px solid #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: 1s ease-out;
-  }
-
-  .circle-link:hover {
-    transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
 
   footer {
@@ -383,30 +252,6 @@
     align-items: center;
   }
 
-  .github-star-badge {
-    color: #24292e;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    padding: 3px 10px;
-    border: 1px solid rgba(27,31,35,.2);
-    border-radius: 3px;
-    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
-    margin-left: 4px;
-    font-weight: 600;
-  }
-
-  .github-star-badge:hover {
-    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-    border-color: rgba(27,31,35,.35);
-    background-position: -.5em;
-  }
-
-  .github-star-badge .material-icons {
-    height: 16px;
-    width: 16px;
-    margin-right: 4px;
-  }
 
   svg#clouds {
     position: fixed;
@@ -445,17 +290,7 @@
     }
   }
 
-  .home-container{
-    display: flex;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-bottom: 6rem;
-    padding-top: 77px;;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-    width: 80%
-  }
+
 
 
 </style>
@@ -760,7 +595,7 @@
   <h1 style="font-size: 2.6rem; padding-bottom: 15px">
     Empoderamos al mundo del mañana en el trabajo
   </h1>
-  <div style="width: 85%; font-size: 1.75rem; line-height: 2.75rem; padding-bottom: 35px">
+  <div style="width: 85%; font-size: 1.75rem; line-height: 2.75rem; padding-bottom: 85px">
     Durante más de una década, hemos liderado el futuro del trabajo flexible.
     Desde trabajadores independientes hasta empresas Fortune 500, estamos
     ayudando a nuestros miembros a reimaginar la forma en que trabajan.
@@ -789,32 +624,177 @@
 
 
 <!--IDEAS SECTION-->
-<section style="width: 80%; padding-left: 10%; padding-right: 10%; padding-top: 50px">
+<section style="width: 100%; padding-left: 10%; padding-right: 10%; padding-bottom: 30px; border-bottom: 1px solid #e1e4ea;">
   <div style="font-weight: 400; font-size: 1.2rem; padding-bottom: 15px">
     IDEAS BY WEWORK
   </div>
-  <div style="width: 100%">
-    <div style="width: 65%">
+
+  <div style="display: flex; width: 100%; padding-bottom: 20px">
+    <div style="width: 70%">
       <h2 style="font-size: 2.6rem; font-weight: 600; line-height: 2.75rem">
         Tendencias y perspectivas de los espacios de trabajo
       </h2>
     </div>
-    <div style="width: 35%">
-      <div style="font-size: 1.3rem">
-        <a href="/es-LA/workspace" class="browse-by-workspace__header-cta-link&#45;&#45;mobile ray-link ray-link&#45;&#45;with-arrow analytics-cta-link" data-test-id="browse-by-workspace__header-cta-link" data-conditions-to-show="" aria-label="Ver todas las soluciones">Sigue leyendo</a>
+
+    <div style="width: 30%; display: flex; justify-content: end; font-size: 1.1rem; align-items: center">
+      <a href="/es-LA/workspace" class="browse-by-workspace__header-cta-link&#45;&#45;mobile ray-link ray-link&#45;&#45;with-arrow analytics-cta-link" data-test-id="browse-by-workspace__header-cta-link" data-conditions-to-show="" aria-label="Ver todas las soluciones">Sigue leyendo</a>
+    </div>
+  </div>
+
+  <div style="display: flex; width: 100%; padding-bottom: 20px">
+    <div style="width: 50%">
+      <img src="/assets/imgs/main-idea.jpeg" alt="main-idea" style="width: 100%; border-radius: 4px"/>
+    </div>
+
+    <div style="width: 50%; display: flex; align-items: center;">
+      <div style="padding-left: 30px">
+        <div class="main-idea-header">
+          ESTUDIOS DE INVESTIGACIÓN ---------------
+        </div>
+        <h1 class="main-idea-title">
+          La importancia de los espacios de oficina flexibles
+        </h1>
+        <div class="main-idea-text">
+          Una encuesta de Cushman & Wakefield revela que las oficinas flexibles son un componente importante del ecosistema del espacio de trabajo.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!--SECONDARY IDEAS SECTION-->
+<section style="width: 100%; padding-left: 10%; padding-right: 10%; padding-top: 30px">
+  <div style="display: flex; width: 100%; padding-bottom: 20px">
+    <div style="width: 33%; padding: 12px">
+      <img src="/assets/imgs/idea-1.jpeg" alt="main-idea" style="width: 100%; border-radius: 4px"/>
+    </div>
+    <div style="width: 33%; padding: 12px">
+      <img src="/assets/imgs/idea-2.jpeg" alt="main-idea" style="width: 100%; border-radius: 4px"/>
+    </div>
+    <div style="width: 33%; padding: 12px">
+      <img src="/assets/imgs/idea-3.jpeg" alt="main-idea" style="width: 100%; border-radius: 4px"/>
+    </div>
+  </div>
+
+  <div style="display: flex; width: 100%; padding-bottom: 20px">
+    <div style="width: 33%; padding: 12px">
+      <div class="main-idea-header-secondary">
+        PRODUCTOS FLEXIBLES --------
+      </div>
+      <h1 class="main-idea-title-secondary">
+        Un espacio de trabajo de vanguardia cerca de Washington, D.C
+      </h1>
+      <div class="main-idea-text">
+        WeWork The Wilson está diseñado a medida para su comunidad local
+      </div>
+    </div>
+    <div style="width: 33%; padding: 12px">
+      <div class="main-idea-header-secondary">
+        CASE STUDIES --------
+      </div>
+      <h1 class="main-idea-title-secondary">
+        How one remote creative agency went global, fast
+      </h1>
+      <div class="main-idea-text">
+        Elephant Skin embraced remote work and office space at WeWork to create a global business
+      </div>
+    </div>
+    <div style="width: 33%; padding: 12px">
+      <div class="main-idea-header-secondary">
+        CASOS PRÁCTICOS ----------
+      </div>
+      <h1 class="main-idea-title-secondary">
+        Cómo cuatro fundadores usan WeWork All Access
+      </h1>
+      <div class="main-idea-text-secondary">
+        Para estos fundadores, el espacio de trabajo ayuda a expandir su empresa y su cultura.
       </div>
     </div>
   </div>
 </section>
 
 
+<!--FOOTER-->
+<footer style="padding-top: 50px;">
+  <section style="width: 100%; padding-left: 10%; padding-right: 10%; padding-top: 80px; background-color: #F7F7F7">
+    <div style="display: flex; width: 100%">
+      <div style="width: 15%; padding: 12px">
+        <div style="font-size: 1rem; color: #888888; padding-bottom: 10px">
+          EMPRESA
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Ubicaciones alrededor del mundo
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Misión
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Inclusión y diversidad
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Oportunidades de empleo
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Inversores
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Sala de redacción
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Blog
+        </div>
+      </div>
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+      <div style="width: 15%; padding: 12px">
+        <div style="font-size: 1rem; color: #888888; padding-bottom: 10px">
+          COLABORACIONES
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Propietarios
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Recomiéndanos a alguien
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Planificadores de eventos
+        </div>
+      </div>
+
+      <div style="width: 15%; padding: 12px">
+        <div style="font-size: 1rem; color: #888888; padding-bottom: 10px">
+          SOPORTE
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Contacto
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Member Login
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Preguntas frecuentes
+        </div>
+        <div style="font-size: 1rem; line-height: 1.5rem; padding-bottom: 8px">
+          Respuesta ante la COVID 19
+        </div>
+      </div>
+
+      <div style="width: 55%; padding: 12px">
+        <div style="display: flex; justify-content: end">
+          <div style="font-size: 1rem; color: #888888; padding-bottom: 10px">
+            Copyright © 2023 WeWork. Todos los derechos reservados.
+          </div>
+          <div style="padding: 20px">
+            <img src="assets/imgs/we-logo-footer.svg"  alt="logo-footer" />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</footer>
 
 <router-outlet></router-outlet>
